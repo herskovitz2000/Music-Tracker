@@ -14,6 +14,9 @@
 		088BC2CA2A5F807F00FEEDD7 /* Music_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2C92A5F807F00FEEDD7 /* Music_TrackerTests.swift */; };
 		088BC2D42A5F807F00FEEDD7 /* Music_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2D32A5F807F00FEEDD7 /* Music_TrackerUITests.swift */; };
 		088BC2D62A5F807F00FEEDD7 /* Music_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2D52A5F807F00FEEDD7 /* Music_TrackerUITestsLaunchTests.swift */; };
+		088BC2E42A5F819700FEEDD7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2E32A5F819700FEEDD7 /* MainView.swift */; };
+		088BC2E62A5F81FF00FEEDD7 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2E52A5F81FF00FEEDD7 /* LandingPage.swift */; };
+		088BC2E82A5F8B2300FEEDD7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BC2E72A5F8B2300FEEDD7 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		088BC2CF2A5F807F00FEEDD7 /* Music TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		088BC2D32A5F807F00FEEDD7 /* Music_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_TrackerUITests.swift; sourceTree = "<group>"; };
 		088BC2D52A5F807F00FEEDD7 /* Music_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		088BC2E32A5F819700FEEDD7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		088BC2E52A5F81FF00FEEDD7 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		088BC2E72A5F8B2300FEEDD7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		088BC2E92A5F921600FEEDD7 /* Music-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Music-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,8 @@
 		088BC2B72A5F807E00FEEDD7 /* Music Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				088BC2E92A5F921600FEEDD7 /* Music-Tracker-Info.plist */,
+				088BC2E22A5F817000FEEDD7 /* Views */,
 				088BC2B82A5F807E00FEEDD7 /* Music_TrackerApp.swift */,
 				088BC2BA2A5F807E00FEEDD7 /* ContentView.swift */,
 				088BC2BC2A5F807F00FEEDD7 /* Assets.xcassets */,
@@ -125,6 +134,16 @@
 				088BC2D52A5F807F00FEEDD7 /* Music_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "Music TrackerUITests";
+			sourceTree = "<group>";
+		};
+		088BC2E22A5F817000FEEDD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				088BC2E32A5F819700FEEDD7 /* MainView.swift */,
+				088BC2E52A5F81FF00FEEDD7 /* LandingPage.swift */,
+				088BC2E72A5F8B2300FEEDD7 /* AppState.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				088BC2BB2A5F807E00FEEDD7 /* ContentView.swift in Sources */,
+				088BC2E82A5F8B2300FEEDD7 /* AppState.swift in Sources */,
+				088BC2E42A5F819700FEEDD7 /* MainView.swift in Sources */,
+				088BC2E62A5F81FF00FEEDD7 /* LandingPage.swift in Sources */,
 				088BC2B92A5F807E00FEEDD7 /* Music_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +442,8 @@
 				DEVELOPMENT_TEAM = DMN3WLJC44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Music-Tracker-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app will access your media library keep track of your listening history";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Herskovitz.Nathan.Music-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Herskovitz.MusicTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,6 +473,8 @@
 				DEVELOPMENT_TEAM = DMN3WLJC44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Music-Tracker-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app will access your media library keep track of your listening history";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Herskovitz.Nathan.Music-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Herskovitz.MusicTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
